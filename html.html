@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-divice-width,initial-scale=1" />
+    <title>TaskTracker</title>
+    <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+<header class="header container">
+    <div class="logo">
+        <img width="25" src=./data/img1.png> <span>TaskTracker</span>
+    </div>
+
+    <nav class="nav-links">
+        <a href="#">App</a>
+        <a href="#">Facilities</a>
+        <a href=/html_and_css/untitled/html.html>Price</a>
+        <a href="#">Blog</a>
+        <a href="#">Contacts</a>
+    </nav>
+
+    <div class="store-buttons">
+        <a href="https://play.google.com/store/games?hl=ru&pli=1"><img src=/data/Screenshot%202025-04-25%20001339.png width="130" height="35"></a>
+        <a href="https://www.apple.com/app-store/"><img src="/data/download-on-the-app-store-apple-logo-png-transparent.png" width="130" height="35"></a>
+    </div>
+</header>
+
+<main>
+    <h1>Price List</h1>
+    <style>
+        body {
+            padding: 30px;
+            justify-content: center;
+        }
+
+        .ctable1 {
+            border-collapse: collapse;
+            text-align: center;
+            max-width: 1000px;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.42);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            max-width: 1000px;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 16px;
+            border: none;
+        }
+
+        th {
+            background-color: #a97ada;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .c11 { background-color: #996fd1; color: #ffffff; font-weight: bold; }
+        .c12 { background-color: #996fd1; color: #ffffff; font-weight: bold; font-size: 25px;}
+        .c13 { background-color: #996fd1; color: #ffffff; font-weight: bold; }
+        .c21 { background-color: #7f51b8; color: #ffffff; font-weight: bold; }
+        .c22 { background-color: #7f51b8; color: #ffffff; font-weight: bold; font-size: 25px;}
+        .c23 { background-color: #7f51b8; color: #ffffff; font-weight: bold; }
+        .c31 { background-color: #66229a; color: #ffffff; font-weight: bold; }
+        .c32 { background-color: #66229a; color: #ffffff; font-weight: bold; font-size: 25px;}
+        .c33 { background-color: #66229a; color: #ffffff; font-weight: bold; }
+        .c41 { background-color: #36134a; color: #ffffff; font-weight: bold; }
+        .c42 { background-color: #36134a; color: #ffffff; font-weight: bold; font-size: 25px;}
+        .c43 { background-color: #36134a; color: #ffffff; font-weight: bold; }
+
+        /*Todos los en blanco!*/
+        .c100 { background-color: #ffffff; color: #020202; font-weight: normal; }
+        .c101 { background-color: #ffffff; color: #020202; font-weight: normal; }
+        .c102 { background-color: #ffffff; color: #020202; font-weight: normal; }
+        .c103 { background-color: #ffffff; color: #020202; font-weight: normal; }
+        .c104 { background-color: #ffffff; color: #020202; font-weight: normal; }
+        .c105 { background-color: #ffffff; color: #020202; font-weight: normal; }
+        .c106 { background-color: #ffffff; color: #020202; font-weight: normal; }
+        .c107 { background-color: #ffffff; color: #020202; font-weight: normal; }
+        .c108 { background-color: #ffffff; color: #020202; font-weight: normal; }
+
+        /*Todos los en gris!*/
+        .c200 { background-color: #eaeaea; color: #000000; font-weight: normal; text-align: left;}
+        .c201 { background-color: #eaeaea; color: #000000; font-weight: normal; }
+        .c202 { background-color: #eaeaea; color: #000000; font-weight: normal; }
+        .c203 { background-color: #eaeaea; color: #000000; font-weight: normal; }
+        .c204 { background-color: #eaeaea; color: #000000; font-weight: normal; }
+        .c205 { background-color: #eaeaea; color: #000000; font-weight: normal; text-align: left;}
+        .c206 { background-color: #eaeaea; color: #000000; font-weight: normal; }
+        .c207 { background-color: #eaeaea; color: #000000; font-weight: normal; }
+        .c208 { background-color: #eaeaea; color: #000000; font-weight: normal; }
+        .c209 { background-color: #eaeaea; color: #000000; font-weight: normal; }
+        .c210 { background-color: #eaeaea; color: #000000; font-weight: normal; text-align: left;}
+        .c211 { background-color: #eaeaea; color: #000000; font-weight: normal; }
+        .c212 { background-color: #eaeaea; color: #000000; font-weight: normal; }
+        .c213 { background-color: #eaeaea; color: #000000; font-weight: normal; }
+        .c214 { background-color: #eaeaea; color: #000000; font-weight: normal; }
+        .c215 { background-color: #eaeaea; color: #000000; font-weight: normal; }
+        .c216 { background-color: #eaeaea; color: #000000; font-weight: normal; }
+        .c217 { background-color: #eaeaea; color: #000000; font-weight: normal; }
+
+        /*In dark Gris!*/
+        .c300 { background-color: #c8c8c8; color: #000000; font-weight: normal; text-align: left;}
+        .c301 { background-color: #c8c8c8; color: #000000; font-weight: normal; }
+        .c302 { background-color: #c8c8c8; color: #000000; font-weight: normal; }
+        .c303 { background-color: #c8c8c8; color: #000000; font-weight: normal; text-align: left;}
+        .c304 { background-color: #c8c8c8; color: #000000; font-weight: normal; }
+        .c305 { background-color: #c8c8c8; color: #000000; font-weight: normal; }
+        .c306 { background-color: #c8c8c8; color: #000000; font-weight: normal; text-align: left;}
+        .c307 { background-color: #c8c8c8; color: #000000; font-weight: normal; }
+        .c308 { background-color: #c8c8c8; color: #000000; font-weight: normal; }
+
+        tr:nth-child(8) td:nth-child(1),
+        tr:nth-child(8) td:nth-child(2),
+        tr:nth-child(8) td:nth-child(3),
+        tr:nth-child(8) td:nth-child(4),
+        tr:nth-child(8) td:nth-child(5) {
+            color: #66229a;
+            font-weight: bold;
+        }
+
+        tr:last-child td table {
+            width: 100%;
+            border: none;
+        }
+
+        tr:last-child td table td {
+            background-color: #e3e3e3;
+            color: #000000;
+            padding: 12px;
+            border-radius: 0;
+            font-weight: normal;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border: 2px solid #d8d8d8
+        }
+
+        tr:last-child td table td:hover {
+            background-color: #4c47b3;
+        }
+    </style>
+    <table class="ctable1">
+        <tr>
+            <th rowspan="3">Choose your plan</th>
+            <td class="c11">starter</td>
+            <td class="c21">econom</td>
+            <td class="c31">standard</td>
+            <td class="c41">professional</td>
+        </tr>
+        <tr>
+            <td class="c12">$10</td>
+            <td class="c22">30$</td>
+            <td class="c32">59$</td>
+            <td class="c42">99$</td>
+        </tr>
+        <tr>
+            <td class="c13">per month</td>
+            <td class="c23">per month</td>
+            <td class="c33">per month</td>
+            <td class="c43">per month</td>
+        </tr>
+        <tr>
+            <td class="c200">Ampount of space</td>
+            <td class="100">20GB</td>
+            <td class="c201">40GB</td>
+            <td class="101">110GB</td>
+            <td class="c202">Unlimited</td>
+        </tr>
+        <tr>
+            <td class="c300">Bandwidth per month</td>
+            <td class="c203">120GB</td>
+            <td class="c301">240GB</td>
+            <td class="c204">610GB</td>
+            <td class="c302">1300GB</td>
+        </tr>
+        <tr>
+            <td class="c205">Email accounts</td>
+            <td class="102">1</td>
+            <td class="c206">15</td>
+            <td class="103">60</td>
+            <td class="c207">Unlimited</td>
+        </tr>
+        <tr>
+            <td class="c303">MySQL database</td>
+            <td class="c208">1</td>
+            <td class="c304">15</td>
+            <td class="c209">60</td>
+            <td class="c305">Unlimited</td>
+        </tr>
+        <tr>
+            <td class="c210">25h support</td>
+            <td class="105">No</td>
+            <td class="c211">Yes</td>
+            <td class="106">Yes</td>
+            <td class="c212">Yes</td>
+        </tr>
+        <tr>
+            <td class="c306">Support ticket per month</td>
+            <td class="c213">2</td>
+            <td class="c307">6</td>
+            <td class="c214">14</td>
+            <td class="c308">20</td>
+        </tr>
+        <tr>
+            <td class="c215"></td>
+            <td class="107">
+                <table>
+                    <tr>
+                        <td>Start</td>
+                    </tr>
+                </table>
+            </td>
+            <td class="c216">
+                <table>
+                    <tr>
+                        <td>Start</td>
+                    </tr>
+                </table>
+            </td>
+            <td class="108">
+                <table>
+                    <tr>
+                        <td>Start</td>
+                    </tr>
+                </table>
+            </td>
+            <td class="c217">
+                <table>
+                    <tr>
+                        <td>Start</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</main>
+
+<footer class="footer container">
+    <div>
+        <p>@2024 TaskTracker. Всі права захищені.</p>
+    </div>
+
+    <div class="social-icons">
+        <a href="https://www.instagram.com/"><img src="data/Instagram_icon.png"></a>
+        <a href="https://dribbble.com/"><img src="data/dribbble-logo-dribbble-logo-transparent-dribbble-icon-transparent-free-free-png.webp"></a>
+        <a href="https://twitter.com/?lang=uk"><img src="/data/twitter-2013-10-08.webp"></a>
+        <a href="https://www.youtube.com/"><img src="data/Youtube_logo.png"></a>
+    </div>
+</footer>
+</body>
+</html>
