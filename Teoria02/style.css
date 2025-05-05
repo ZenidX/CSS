@@ -1,5 +1,0 @@
-/*inicializar una propiedad de estilo heredada*/
-header{color:purple}
-h1{color:initial}
-/*Obligar a heredar propiedades*/
-a{color:inherit;text-decoration:inherit}
