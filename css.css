@@ -1,0 +1,168 @@
+/* styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.store-buttons {
+    margin-right: 35%;
+}
+/**/
+.nav-container {
+    margin-left: 1%;
+    display: flex;
+    align-items: center;
+    gap: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 10%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 1%;
+    width: 80%;
+}
+
+.store-buttons {
+    display: flex;
+    gap: 1rem;
+}
+/**/
+nav a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 10px;
+    font-weight: 500;
+}
+/**/
+main {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    padding: 60px 40px;
+    flex-wrap: wrap;
+}
+
+main h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center; /* Centra el texto del h1 */
+}
+
+main table {
+    margin: 0 auto; /* Centra la tabla */
+}
+
+main p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+main a {
+    display: inline-block;
+    background-color: #a855f7;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10px;
+    flex-wrap: wrap;
+}
+/**/
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a img {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+/**/
+.footer-content {
+    display: flex;
+    align-items: center;
+
+    justify-content: flex-end;
+}
+
+.social-icons {
+    margin-right: 40%;
+    display: flex;
+    gap: 1rem; /* Espacio entre íconos */
+}
+
+.social-icons img {
+    width: 24px;   /* Ajusta según tu diseño */
+    height: 24px;
+}
+
+/**/
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header, footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header div, footer div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+/*styles.css*/
